@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            ЛОГОТИП<br>12 ТАНГО
+        </div>
+
+        <a href="index.html">Главная</a>
+        <a href="materials.html">Материалы</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="socials.html">Соцсети</a>
+        <a href="team.html">Команда</a>
+
+    </aside>
+
+    <main class="main">
+
+        <h1 class="page-title">Мероприятия</h1>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h2>Ближайшие мероприятия</h2>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="event">
+
+                    <h3>🎯 Ночной турнир CS2</h3>
+
+                    <p>
+                        Дата: 20 июля<br>
+                        Время: 22:00<br>
+                        Формат: 5×5<br>
+                        Призовой фонд: 15 000 ₽
+                    </p>
+                </label>
+
+                <hr><br>
+
+                <label>
+                    <input type="radio" name="event">
+
+                    <h3>⛏️ LAN-вечер Minecraft</h3>
+
+                    <p>
+                        Дата: 27 июля<br>
+                        Время: 18:00<br>
+                        Формат: совместное выживание и мини-игры<br>
+                        Для всех желающих
+                    </p>
+                </label>
+
+                <hr><br>
+
+                <label>
+                    <input type="radio" name="event">
+
+                    <h3>🔥 Valorant Community Cup</h3>
+
+                    <p>
+                        Дата: 3 августа<br>
+                        Время: 17:00<br>
+                        Формат: командный турнир<br>
+                        Призы от партнёров клуба
+                    </p>
+                </label>
+
+                <br><br>
+
+                <button class="btn" onclick="registerEvent()">
+                    Зарегистрироваться
+                </button>
+
+                <p id="message"></p>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <a href="contacts.html">Контакты</a>
+            <a href="socials.html">Соцсети</a>
+            <a href="team.html">Команда</a>
+        </div>
+
+    </main>
+
+</div>
+
+<div class="leaves">
+    <div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div>
+    <div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div>
+</div>
+
+</body>
+</html>

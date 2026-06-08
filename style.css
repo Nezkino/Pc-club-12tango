@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f0f0f, #070707);
+    color: #e6ffe6;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 250px;
+    background: rgba(10, 10, 10, 0.95);
+    border-right: 1px solid rgba(0, 255, 136, 0.2);
+    padding: 20px;
+}
+
+.logo {
+    height: 120px;
+    border: 1px dashed rgba(0, 255, 136, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    color: #00ff88;
+    text-align: center;
+}
+
+/* links */
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #e6ffe6;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    background: rgba(0, 255, 136, 0.1);
+    border-left: 2px solid #00ff88;
+}
+
+/* ===== MAIN ===== */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #00ff88;
+    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+    padding-bottom: 10px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(20, 20, 20, 0.85);
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    min-width: 260px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.25);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #00ff88;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 16px;
+    background: transparent;
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #00ff88;
+    color: black;
+    box-shadow: 0 0 15px #00ff88;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(10, 10, 10, 0.6);
+    border-radius: 10px;
+}
+
+.footer a {
+    color: #e6ffe6;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #00ff88;
+}
+
+/* ===== TOGGLE SYSTEM (ЕДИНСТВЕННАЯ СИСТЕМА) ===== */
+.hidden {
+    display: none;
+}
+
+/* ===== LEAVES ===== */
+.leaves {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.leaf {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, #00ff88, #0a5);
+    border-radius: 0 100% 0 100%;
+    opacity: 0.3;
+    animation: fall 10s linear infinite, sway 3s ease-in-out infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0%, 100% { margin-left: 0; }
+    50% { margin-left: 20px; }
+}
+
+/* leaf positions */
+.leaf:nth-child(1) { left: 5%; animation-duration: 8s, 3s; }
+.leaf:nth-child(2) { left: 15%; animation-duration: 10s, 4s; }
+.leaf:nth-child(3) { left: 25%; animation-duration: 7s, 3s; }
+.leaf:nth-child(4) { left: 40%; animation-duration: 11s, 5s; }
+.leaf:nth-child(5) { left: 55%; animation-duration: 9s, 3s; }
+.leaf:nth-child(6) { left: 70%; animation-duration: 12s, 4s; }
+.leaf:nth-child(7) { left: 85%; animation-duration: 8s, 3s; }
+
+.hero {
+    padding: 80px 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(0,255,136,0.18),
+        rgba(0,0,0,0)
+    );
+
+    border: 1px solid rgba(0,255,136,0.25);
+    text-align: center;
+
+    box-shadow: 0 0 25px rgba(0,255,136,0.08);
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: #00ff88;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
