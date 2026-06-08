@@ -1,108 +1,199 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Материалы</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
 
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
 
 <div class="layout">
 
-<aside class="sidebar">
-<div class="logo">ЛОГОТИП<br>12 ТАНГО</div>
+    <aside class="sidebar">
 
-<a href="index.html">Главная</a>
-<a href="materials.html">Материалы</a>
-<a href="booking.html">Бронирование</a>
-<a href="events.html">Мероприятия</a>
-<a href="gallery.html">Галерея</a>
-<a href="contacts.html">Контакты</a>
-<a href="socials.html">Соцсети</a>
-<a href="team.html">Команда</a>
-</aside>
+        <div class="logo">
+            ЛОГОТИП<br>12 ТАНГО
+        </div>
 
-<main class="main">
+        <a href="index.html">Главная</a>
+        <a href="materials.html">Материалы</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="socials.html">Соцсети</a>
+        <a href="team.html">Команда</a>
 
-<h1 class="page-title">Материалы</h1>
+    </aside>
 
-<div class="cards">
+    <main class="main">
 
-<div class="card">
-<h3>Правила</h3>
+        <h1 class="page-title">Галерея</h1>
 
-<button class="btn" onclick="toggleBlock('materials_rules')">Открыть</button>
+        <div class="cards">
 
-<div id="materials_rules" class="hidden">
-<p>
-<b>Правила «12 танго»</b><br><br>
-1. Бронируй заранее<br><br>
-2. Уважай других игроков<br><br>
-3. Следи за техникой<br><br>
-4. Личные вещи при себе<br><br>
-5. Без агрессии<br><br>
-6. Любые проблемы — админ
+            <!-- 1 -->
+            <div class="card">
+                <h3>Зал клуба</h3>
+
+                <button class="btn" onclick="toggleBlock('gallery1')">
+                    Открыть
+                </button>
+
+                <div id="gallery1" class="hidden">
+
+                    <br>
+
+                    <p>
+Здесь будут фотографии основного игрового зала:
+
+<br><br>
+
+• ряды игровых ПК  
+<br>
+• светящиеся мониторы  
+<br>
+• атмосфера ночных каток  
+<br>
+• общий вид клуба  
+
+<br><br>
+
+📷 (пока это заглушка под будущие фото)
 </p>
-</div>
 
-</div>
+                </div>
+            </div>
 
-<div class="card">
-<h3>FAQ</h3>
+            <!-- 2 -->
+            <div class="card">
+                <h3>Игровые зоны</h3>
 
-<button class="btn" onclick="toggleBlock('materials_faq')">Открыть</button>
+                <button class="btn" onclick="toggleBlock('gallery2')">
+                    Открыть
+                </button>
 
-<div id="materials_faq" class="hidden">
-<p>
-<b>FAQ</b><br><br>
-Бронирование — онлайн<br>
-Цена — почасовая<br>
-Можно свою периферию<br>
-Еда нежелательна<br>
-Есть комнаты<br>
-Работаем до ночи
+                <div id="gallery2" class="hidden">
+
+                    <br>
+
+                    <p>
+Здесь будут фото отдельных зон:
+
+<br><br>
+
+• одиночные места  
+<br>
+• командные зоны  
+<br>
+• приватные комнаты  
+<br>
+• VIP-места  
+
+<br><br>
+
+📷 (пока макет без изображений)
 </p>
-</div>
 
-</div>
+                </div>
+            </div>
 
-<div class="card">
-<h3>Памятка</h3>
+            <!-- 3 -->
+            <div class="card">
+                <h3>События</h3>
 
-<button class="btn" onclick="toggleBlock('materials_memo')">Открыть</button>
+                <button class="btn" onclick="toggleBlock('gallery3')">
+                    Открыть
+                </button>
 
-<div id="materials_memo" class="hidden">
-<p>
-<b>График</b><br>
-Пн–Чт 08–23<br>
-Пт–Вс 24/7<br><br>
+                <div id="gallery3" class="hidden">
 
-• Бронируй заранее<br>
-• Еда запрещена<br>
-• Можно свою мышь<br>
-• Есть комнаты<br>
-• Админ рядом
+                    <br>
+
+                    <p>
+Здесь будут фото мероприятий:
+
+<br><br>
+
+• турниры  
+<br>
+• ночные ивенты  
+<br>
+• совместные игры  
+<br>
+• награждения  
+
+<br><br>
+
+📷 (пока заглушка под контент)
 </p>
-</div>
+
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="card">
+                <h3>Комьюнити</h3>
+
+                <button class="btn" onclick="toggleBlock('gallery4')">
+                    Открыть
+                </button>
+
+                <div id="gallery4" class="hidden">
+
+                    <br>
+
+                    <p>
+Здесь будут живые фото игроков:
+
+<br><br>
+
+• друзья за каткой  
+<br>
+• эмоции после игр  
+<br>
+• мемные моменты  
+<br>
+• атмосфера клуба  
+
+<br><br>
+
+📷 (пока без реальных изображений)
+</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+
+            <a href="contacts.html">Контакты</a>
+            <a href="socials.html">Соцсети</a>
+            <a href="team.html">Команда</a>
+
+        </div>
+
+    </main>
 
 </div>
 
-</div>
+<div class="leaves">
 
-<div class="footer">
-<a href="contacts.html">Контакты</a>
-<a href="socials.html">Соцсети</a>
-<a href="team.html">Команда</a>
-</div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
 
-</main>
 </div>
-
-<div class="leaves"></div>
 
 </body>
 </html>
