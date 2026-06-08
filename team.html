@@ -1,97 +1,174 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Материалы</title>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда</title>
 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 <body>
 
 <div class="layout">
 
-<aside class="sidebar">
-<div class="logo">ЛОГОТИП<br>12 ТАНГО</div>
+    <aside class="sidebar">
 
-<a href="index.html">Главная</a>
-<a href="materials.html">Материалы</a>
-<a href="booking.html">Бронирование</a>
-<a href="events.html">Мероприятия</a>
-<a href="gallery.html">Галерея</a>
-<a href="contacts.html">Контакты</a>
-<a href="socials.html">Соцсети</a>
-<a href="team.html">Команда</a>
-</aside>
+        <div class="logo">
+            ЛОГОТИП<br>12 ТАНГО
+        </div>
 
-<main class="main">
+        <a href="index.html">Главная</a>
+        <a href="materials.html">Материалы</a>
+        <a href="booking.html">Бронирование</a>
+        <a href="events.html">Мероприятия</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="socials.html">Соцсети</a>
+        <a href="team.html">Команда</a>
 
-<h1 class="page-title">Материалы</h1>
+    </aside>
 
-<div class="cards">
+    <main class="main">
 
-<div class="card">
-<h3>Правила</h3>
-<button class="btn" onclick="toggleBlock('mat_rules')">Открыть</button>
+        <h1 class="page-title">Команда</h1>
 
-<div id="mat_rules" class="hidden">
-<p>
-<b>Правила «12 танго»</b><br><br>
-1. Бронируй заранее<br>
-2. Уважай других<br>
-3. Следи за техникой<br>
-4. Без агрессии<br>
-5. Админ всегда рядом
+        <div class="cards">
+
+            <!-- 1 -->
+            <div class="card">
+
+                <h3>История клуба</h3>
+
+                <button class="btn" onclick="toggleBlock('story')">
+                    Открыть
+                </button>
+
+                <div id="story" class="hidden">
+
+                    <br>
+
+                    <p>
+<b>«12 танго»: история, которая пишется вместе с тобой</b>
+
+<br><br>
+
+Когда мы только начинали, у нас не было ни пафосных планов, ни «стратегии на пять лет».  
+Была простая боль: ты приходишь в клуб, а там либо техника живёт своей жизнью, либо атмосфера такая, что хочется просто надеть наушники и спрятаться.
+
+<br><br>
+
+А ведь игра — это про кайф, про тот самый момент, когда ты с друзьями сидишь, споришь про сборку, смеёшься над нелепой ошибкой и понимаешь: вот оно, настоящее.
+
+<br><br>
+
+Мы не стали ждать идеального места — мы его сделали сами.
+
+<br><br>
+
+«12 танго» — это не про стерильный сервис.  
+Это про то, чтобы ты сел за ПК и просто почувствовал игру.
 </p>
-</div>
-</div>
 
-<div class="card">
-<h3>FAQ</h3>
-<button class="btn" onclick="toggleBlock('mat_faq')">Открыть</button>
+                </div>
 
-<div id="mat_faq" class="hidden">
-<p>
-Бронирование онлайн<br>
-Цена почасовая<br>
-Можно свою периферию<br>
-Есть комнаты<br>
-Работаем до ночи
+            </div>
+
+            <!-- 2 -->
+            <div class="card">
+
+                <h3>Кто мы</h3>
+
+                <button class="btn" onclick="toggleBlock('who')">
+                    Открыть
+                </button>
+
+                <div id="who" class="hidden">
+
+                    <br>
+
+                    <p>
+<b>Наша команда — это не случайные люди</b>
+
+<br><br>
+
+• Те, кто ночами собирал ПК и знает каждый шум кулера  
+<br><br>
+• Те, кто сам провёл тысячи часов в играх и понимает, что значит лаг в решающий момент  
+<br><br>
+• Те, кто умеет спокойно решить любой конфликт, не ломая атмосферу  
+<br><br>
+
+Здесь каждый отвечает за своё: техника, порядок, атмосфера и помощь игрокам.
 </p>
-</div>
-</div>
 
-<div class="card">
-<h3>Памятка</h3>
-<button class="btn" onclick="toggleBlock('mat_memo')">Открыть</button>
+                </div>
 
-<div id="mat_memo" class="hidden">
-<p>
-Пн–Чт 08–23<br>
-Пт–Вс 24/7<br><br>
-• Бронируй заранее<br>
-• Еда запрещена<br>
-• Есть комнаты<br>
-• Админ рядом
+            </div>
+
+            <!-- 3 -->
+            <div class="card">
+
+                <h3>Философия</h3>
+
+                <button class="btn" onclick="toggleBlock('philosophy')">
+                    Открыть
+                </button>
+
+                <div id="philosophy" class="hidden">
+
+                    <br>
+
+                    <p>
+<b>Почему мы это делаем</b>
+
+<br><br>
+
+Потому что сами когда-то сидели в местах, где всё ломалось в самый важный момент.
+
+<br><br>
+
+И решили, что можно иначе.
+
+<br><br>
+
+Мы не идеальны — но мы рядом, когда что-то идёт не так.
+
+<br><br>
+
+И именно поэтому здесь всё работает.
 </p>
-</div>
-</div>
 
-</div>
+                </div>
 
-<div class="footer">
-<a href="contacts.html">Контакты</a>
-<a href="socials.html">Соцсети</a>
-<a href="team.html">Команда</a>
-</div>
+            </div>
 
-</main>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+
+            <a href="contacts.html">Контакты</a>
+            <a href="socials.html">Соцсети</a>
+            <a href="team.html">Команда</a>
+
+        </div>
+
+    </main>
+
 </div>
 
 <div class="leaves">
-<div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div>
-<div class="leaf"></div><div class="leaf"></div><div class="leaf"></div><div class="leaf"></div>
+
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+
 </div>
 
 </body>
